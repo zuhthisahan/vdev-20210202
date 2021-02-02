@@ -15,6 +15,12 @@ NEWSPIDER_MODULE = 'webscrapy.spiders'
 # Splash Setup
 SPLASH_URL = 'http://localhost:8050'
 
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy_splash.SplashCookiesMiddleware': 723,
+    'scrapy_splash.SplashMiddleware': 725,
+    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+}
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'webscrapy (+http://www.yourdomain.com)'
