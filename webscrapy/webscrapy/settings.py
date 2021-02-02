@@ -12,6 +12,9 @@ BOT_NAME = 'webscrapy'
 SPIDER_MODULES = ['webscrapy.spiders']
 NEWSPIDER_MODULE = 'webscrapy.spiders'
 
+# Splash Setup
+SPLASH_URL = 'http://localhost:8050'
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'webscrapy (+http://www.yourdomain.com)'
