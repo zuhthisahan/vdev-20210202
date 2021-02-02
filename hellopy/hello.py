@@ -1,4 +1,6 @@
 import sys
+import scrapy
+import scrapy_splash
 
 print("### Building permit info for placer country ###")
 if len(sys.argv) == 1:
