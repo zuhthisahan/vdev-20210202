@@ -24,3 +24,4 @@ The GIL uses a single lock which adds a rule that execution of a program require
 
 ## Docker image
 ![](images/splash-running.png)
+![](images/sc.png)
