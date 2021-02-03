@@ -1,4 +1,6 @@
 import scrapy
+from scrapy_splash import SplashRequest
+
 
 class PlacerSpider(scrapy.Spider):
     name = 'placer'
@@ -7,7 +9,7 @@ class PlacerSpider(scrapy.Spider):
     def start_requests(self):
         url = 'https://permits.placer.ca.gov/CitizenAccess/Default.aspx'
 
-        yield scrapy.Request(url=url, callback=self.parse)
+        yield SplashRequest(url=url, callback=self.parse)
 
     def parse(self, response):
         yield {
