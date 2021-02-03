@@ -9,4 +9,11 @@ class PlacerSpider(scrapy.Spider):
 
         yield scrapy.Request(url=url, callback=self.parse)
 
-    
+    def parse(self, response):
+        yield {
+            # get the Permit number
+            'Permit Number' : response.css('div.rec-left h1 span#ctl00_PlaceHolderMain_lblPermitNumber::text').get(),
+            'Applicant Name' :  response.css('span.contactinfo_businessname::text').get(),
+            'Work Place' :  response.css('.NotBreakWord::text').get(),
+
+        }
