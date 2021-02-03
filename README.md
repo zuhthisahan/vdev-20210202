@@ -25,3 +25,8 @@ The GIL uses a single lock which adds a rule that execution of a program require
 ## Docker image
 ![](images/splash-running.png)
 ![](images/sc.png)
+
+
+## Problems 
+
+In order to extract the details from the requested page, I recives an empty array as repsonse. I think the problem is, after entered the parcel number the url doesn't change according to the dynamic request so i have to find a proper way to pass the requesting url according to the parcel number.
